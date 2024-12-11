@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TUPROMEDIO.COM</title>
+    <link rel="stylesheet" href="Css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="menu" >
+                <a href="index.html"><img src="img/cal.ico" alt="img">TUPROMEDIO.COM </i></a>
+                <a href="#promedio"> <img src="img/" alt="">Promedio</a>
+                <a href="#calcular"> Ayuda </a>
+            </div>
+        </nav>
+       
+    
+    </header>
+    <div id="contenedor">
+        <h1> Calcular Promedio </h1>
+        <label>Nombre</label>
+        <input type="text" id="Nombre">
+        <label>Nota2</label>
+        <input type="number" id="nota1">
+        <label>Nota3</label>
+        <input type="number" id="nota2">
+        <label>Nota4</label>
+        <input type="number" id="nota3">
+
+        <button class="neu-button" onclick="guardar()">Calcular</button>
+    </div>
+    </div>
+
+    <div id="contenedor">
+        <h2>Resultados</h2>
+        <table class="result-table" id="tablaResultado">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Nota 1</th>
+                    <th>Nota 2</th>
+                    <th>Nota 3</th>
+                    <th>Promedio</th>
+                </tr>
+            </thead>
+            <tbody> </tbody>
+        </table>
+    </div>
+    </div>
+
+
+    <main>
+        <section id="promedio">
+            <h1>¿Qué es un promedio?</h1>
+            <p>resumido promedio de estudiante que es es resumido
+                El promedio de un estudiante es una medida de su rendimiento académico. Se calcula sumando todas las
+                notas obtenidas y dividiendo esa suma por el número total de notas. Este valor representa el nivel
+                general de desempeño del estudiante en sus asignaturas. 🎓📚</p>
+            <section id="calcular">
+                <h1>¿Cómo calcular el promedio de notas?</h1>
+                <p>La fórmula para calcular un promedio ponderado es la siguiente:<br> <br> <br>
+
+                    Promedio Ponderado = (Valor1 * Peso1 + Valor2 * Peso2 + ... + ValorN * PesoN) / (Peso1 + Peso2 + ...
+                    + PesoN)
+                    En esta fórmula, "Valor1, Valor2, ... ValorN" representan los valores individuales que se desean
+                    promediar (por ejemplo, calificaciones en diferentes exámenes), y "Peso1, Peso2, ... PesoN" son los
+                    pesos o porcentajes asignados a cada valor (por ejemplo, el porcentaje o ponderación de un examen en
+                    la calificación final). El numerador calcula la suma ponderada de los valores, y el denominador
+                    calcula la suma de los pesos. Dividir el numerador por el denominador proporciona el promedio
+                    ponderado.<br> <br> <br>
+
+                    Esta fórmula es útil para calcular promedios de calificaciones, evaluaciones de proyectos o
+                    cualquier situación en la que se necesite dar más importancia a ciertos elementos en el conjunto de
+                    datos. Los promedios ponderados ofrecen una visión más precisa y equitativa del rendimiento cuando
+                    las evaluaciones no son igualmente significativas. <br> <br> <br>
+
+                </p>
+            </section>
+
+        </section>
+    </main>
+    <script src="JS/app.js"></script>
+</body>
+
+</html>
