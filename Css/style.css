@@ -54,6 +54,13 @@ section {
 
 }
 
+.content-wrapper{
+    display: flex; /* Activa el diseño de flexbox */
+    gap: 20px; /* Espacio entre el formulario y la tabla */
+    align-items: flex-start;
+    justify-content: center;
+}
+
 .promedioNotas {
     width: 80%;
     /* Ancho del contenedor, puedes ajustarlo */
