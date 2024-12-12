@@ -8,51 +8,58 @@
     <link rel="stylesheet" href="Css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
 
 </head>
+
 <body>
     <header>
         <nav>
-            <div class="menu" >
+            <div class="menu">
                 <a href="index.html"><img src="img/cal.ico" alt="img">TUPROMEDIO.COM </i></a>
                 <a href="#promedio"> <img src="img/" alt="">Promedio</a>
                 <a href="#calcular"> Ayuda </a>
             </div>
         </nav>
-       
-    
+
+
     </header>
-    <div id="contenedor">
-        <h1> Calcular Promedio </h1>
-        <label>Nombre</label>
-        <input type="text" id="Nombre">
-        <label>Nota2</label>
-        <input type="number" id="nota1">
-        <label>Nota3</label>
-        <input type="number" id="nota2">
-        <label>Nota4</label>
-        <input type="number" id="nota3">
 
-        <button class="neu-button" onclick="guardar()">Calcular</button>
-    </div>
+    <div class="content-wrapper">
+        <div id="contenedor">
+            <h1> Calcular Promedio </h1>
+            <label>Nombre</label>
+            <input type="text" id="Nombre">
+            <label>Nota2</label>
+            <input type="number" id="nota1">
+            <label>Nota3</label>
+            <input type="number" id="nota2">
+            <label>Nota4</label>
+            <input type="number" id="nota3">
+
+            <button class="neu-button" onclick="guardar()">Calcular</button>
+        </div>
+
+        <div id="contenedor">
+            <h2>Resultados</h2>
+            <table class="result-table" id="tablaResultado">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Nota 1</th>
+                        <th>Nota 2</th>
+                        <th>Nota 3</th>
+                        <th>Promedio</th>
+                    </tr>
+                </thead>
+                <tbody> </tbody>
+            </table>
+        </div>
     </div>
 
-    <div id="contenedor">
-        <h2>Resultados</h2>
-        <table class="result-table" id="tablaResultado">
-            <thead>
-                <tr>
-                    <th>Nombre</th>
-                    <th>Nota 1</th>
-                    <th>Nota 2</th>
-                    <th>Nota 3</th>
-                    <th>Promedio</th>
-                </tr>
-            </thead>
-            <tbody> </tbody>
-        </table>
-    </div>
+
     </div>
 
 
