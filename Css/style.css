@@ -41,7 +41,7 @@ nav a:hover {
 
 /* Main Section */
 section {
-    margin: 2rem auto;
+    margin: auto;
     padding: 1rem;
     background-color: white;
 }
@@ -60,11 +60,12 @@ section {
 
 /* Content Wrapper */
 .content-wrapper {
-    margin-top: 1%;
+    margin-top: 4%;
     display: flex; 
     gap: 20px; 
     align-items: flex-start;
     justify-content: center;
+    margin-bottom: 4%;
 }
 
 /* Promedio Notas */
@@ -149,4 +150,63 @@ button[onclick="borrarEstudiantes()"]:hover {
     position: sticky;
     top: 0;
     z-index: 1;
+}
+
+/* footer */
+
+footer {
+    background-color: purple;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-info {
+    flex: 1;
+    margin: 10px;
+}
+
+.footer-links {
+    flex: 1;
+    margin: 10px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #ddd;
+}
+
+.footer-socials {
+    flex: 1;
+    margin: 10px;
+}
+
+.footer-socials a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.footer-socials img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease;
+}
+
+.footer-socials img:hover {
+    transform: scale(1.2);
 }
