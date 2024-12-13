@@ -12,7 +12,7 @@ document.getElementById('contacto-form').addEventListener('submit', function (e)
         return;
     }
 
-    // Simula el envío del formulario (puedes reemplazarlo con un fetch para un backend real)
+    // Simulacion de envio de mensaje
     setTimeout(() => {
         respuestaDiv.style.color = 'green';
         respuestaDiv.textContent = '¡Mensaje enviado exitosamente! Nos pondremos en contacto pronto.';

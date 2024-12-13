@@ -63,19 +63,16 @@ function agregarFila(estudiante) {
 function eliminarEstudiante(nombre) {
     // Confirmar la eliminación
     if (confirm("¿Estás seguro de que quieres eliminar a este estudiante?")) {
-        // Elimina el estudiante del array
         estudiantes = estudiantes.filter(est => est.Nombre !== nombre);
         
         // Guarda el nuevo array en localStorage
         localStorage.setItem("estudiantes", JSON.stringify(estudiantes));
         
-        // Actualiza la tabla
         actualizarTabla();
     }
 }
 
 function actualizarTabla() {
-    // Vacia la tabla
     tablaResultado.innerHTML = "";
     
     // Vuelve a agregar todas las filas
