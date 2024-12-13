@@ -11,39 +11,37 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
         rel="stylesheet">
-
 </head>
 
 <body>
     <header>
         <nav>
             <div class="menu">
-                <a href="index.html"><img src="img/cal.ico" alt="img">TUPROMEDIO.COM </i></a>
-                <a href="#promedio"> <img src="img/" alt="">Promedio</a>
-                <a href="#calcular"> Ayuda </a>
+                <a href="index.html"><img src="img/cal.ico" alt="img">TUPROMEDIO.COM</a>
+                <a href="#promedio">Promedio</a>
+                <a href="#calcular">Ayuda</a>
             </div>
         </nav>
-
-
     </header>
 
     <div class="content-wrapper">
         <div id="contenedor">
-            <h1> Calcular Promedio </h1>
-            <label>Nombre</label>
-            <input type="text" id="Nombre">
-            <label>Nota2</label>
-            <input type="number" id="nota1">
-            <label>Nota3</label>
-            <input type="number" id="nota2">
-            <label>Nota4</label>
-            <input type="number" id="nota3">
-
+            <h1>Calcular Promedio</h1>
+            <label for="Nombre">Nombre</label>
+            <input type="text" id="Nombre" placeholder="Ingresa tu nombre">
+            <label for="nota1">Nota 1</label>
+            <input type="number" id="nota1" placeholder="0 - 10">
+            <label for="nota2">Nota 2</label>
+            <input type="number" id="nota2" placeholder="0 - 10">
+            <label for="nota3">Nota 3</label>
+            <input type="number" id="nota3" placeholder="0 - 10">
             <button class="neu-button" onclick="guardar()">Calcular</button>
         </div>
 
+        <!-- Tabla de resultados -->
         <div id="contenedor">
             <h2>Resultados</h2>
+            <button class="neu-button" onclick="borrarEstudiantes()">Borrar Todos</button>
             <table class="result-table" id="tablaResultado">
                 <thead>
                     <tr>
@@ -52,47 +50,39 @@
                         <th>Nota 2</th>
                         <th>Nota 3</th>
                         <th>Promedio</th>
+                        <th>Funciones</th>
                     </tr>
                 </thead>
-                <tbody> </tbody>
+                <tbody>
+                    <!-- Aquí se agregarán las filas dinámicamente -->
+                </tbody>
             </table>
         </div>
     </div>
 
-
-    </div>
-
-
     <main>
         <section id="promedio">
             <h1>¿Qué es un promedio?</h1>
-            <p>resumido promedio de estudiante que es es resumido
+            <p>
                 El promedio de un estudiante es una medida de su rendimiento académico. Se calcula sumando todas las
                 notas obtenidas y dividiendo esa suma por el número total de notas. Este valor representa el nivel
-                general de desempeño del estudiante en sus asignaturas. 🎓📚</p>
-            <section id="calcular">
-                <h1>¿Cómo calcular el promedio de notas?</h1>
-                <p>La fórmula para calcular un promedio ponderado es la siguiente:<br> <br> <br>
-
-                    Promedio Ponderado = (Valor1 * Peso1 + Valor2 * Peso2 + ... + ValorN * PesoN) / (Peso1 + Peso2 + ...
-                    + PesoN)
-                    En esta fórmula, "Valor1, Valor2, ... ValorN" representan los valores individuales que se desean
-                    promediar (por ejemplo, calificaciones en diferentes exámenes), y "Peso1, Peso2, ... PesoN" son los
-                    pesos o porcentajes asignados a cada valor (por ejemplo, el porcentaje o ponderación de un examen en
-                    la calificación final). El numerador calcula la suma ponderada de los valores, y el denominador
-                    calcula la suma de los pesos. Dividir el numerador por el denominador proporciona el promedio
-                    ponderado.<br> <br> <br>
-
-                    Esta fórmula es útil para calcular promedios de calificaciones, evaluaciones de proyectos o
-                    cualquier situación en la que se necesite dar más importancia a ciertos elementos en el conjunto de
-                    datos. Los promedios ponderados ofrecen una visión más precisa y equitativa del rendimiento cuando
-                    las evaluaciones no son igualmente significativas. <br> <br> <br>
-
-                </p>
-            </section>
-
+                general de desempeño del estudiante en sus asignaturas. 🎓📚
+            </p>
         </section>
+        <section id="calcular">
+        <h1>¿Cómo calcular el promedio de notas?</h1>
+        <p>
+            La fórmula para calcular un promedio ponderado es:
+            <br><br>
+            <strong>Promedio Ponderado</strong> =
+            (Valor1 * Peso1 + Valor2 * Peso2 + ... + ValorN * PesoN) / (Peso1 + Peso2 + ... + PesoN)
+            <br><br>
+            Esta fórmula es útil para situaciones en las que se necesita dar más importancia a ciertos elementos
+            en el conjunto de datos.
+        </p>
+    </section>
     </main>
+
     <script src="JS/app.js"></script>
 </body>
 
